@@ -1,25 +1,24 @@
 import React, { Component, Fragment } from 'react';
+import DatePicker from "react-datepicker";
+import "react-datepicker/dist/react-datepicker.css";
 
 
-export default class Ingredients extends Component {
+
+export default class Recipe extends Component {
     constructor(props) {
       super(props);
       this.state = {
         
       };
-      this.api = `http://localhost:8000/api/example`;
+     
     }
     componentDidMount() {
-      fetch(this.api)
-        .then(res => res.json())
-        .then(seaCreatures => {
-         
-        });
+      
     }
   
     render() {
       return (
-        <div id={"ingredients"}>
+        <div id={"results"}>
         {/* your code here */}
           
          
