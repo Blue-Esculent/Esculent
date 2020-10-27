@@ -9,6 +9,7 @@ import Ingredient_DayPlan from "./Components/Ingredient_DayPlan";
 
 // import './App.css';
 
+
 export default class App extends Component {
   constructor(props) {
     super(props);
@@ -38,10 +39,7 @@ export default class App extends Component {
       <div id={"main"}>
         <h1>Welcome to Blue Ocean!</h1>
         <Login/>
-        
-        
-        
-        
+
       </div>
     );
   }
