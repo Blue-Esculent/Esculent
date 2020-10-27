@@ -10,9 +10,12 @@ module.exports = {
   module : {
     rules : [
       {
-        test: /\.(js|mjs|jsx)$/,
+        test: /\.(js|mjs|jsx|png|jp(e*)g|svg|gif)$/,
         enforce: 'pre',
-        loader: 'eslint-loader'
+        loader: 'eslint-loader', 'file-loader',
+        options: {
+          name: 'images/[hash]-[name].[ext]'
+        };
       },
       {
         test : /\.js?/,
