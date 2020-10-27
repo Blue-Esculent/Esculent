@@ -1,4 +1,7 @@
 import React, { Component, Fragment } from 'react';
+import DatePicker from "react-datepicker";
+import "react-datepicker/dist/react-datepicker.css";
+import Goal from "./Components/Goal_Meter";
 
 
 
@@ -8,19 +11,16 @@ export default class Recipe extends Component {
       this.state = {
         
       };
-      this.api = `http://localhost:8000/api/example`;
+     
     }
     componentDidMount() {
-      fetch(this.api)
-        .then(res => res.json())
-        .then(seaCreatures => {
-         
-        });
+      
     }
-  
+  //
     render() {
       return (
-        <div id={"recipe"}>
+        <div id={"dayplan"}>
+        <Goal/>
         {/* your code here */}
           
          
