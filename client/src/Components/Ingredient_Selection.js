@@ -1,9 +1,11 @@
 import React, { Component, Fragment } from 'react';
 import DatePicker from "react-datepicker";
 import "react-datepicker/dist/react-datepicker.css";
+import Ingredient_results from "./Ingredient_results";
 
 
-export default class Ingredients extends Component {
+
+export default class Ingredient_Selection extends Component {
     constructor(props) {
       super(props);
       this.state = {
@@ -19,6 +21,8 @@ export default class Ingredients extends Component {
       // this.api = `http://localhost:8000/api/example`;
     }
 
+    //method linked to event listener to update state.name from the username input box
+
     dateSelected(){
       //when date is selected need to set state to current date
       //make api call to db to see if user has info for that date yet
@@ -27,6 +31,8 @@ export default class Ingredients extends Component {
     }
 
     componentDidMount() {
+      //*2event listner login coponent
+
       // fetch(this.api)
       //   .then(res => res.json())
       //   .then(seaCreatures => {
@@ -35,6 +41,10 @@ export default class Ingredients extends Component {
     }
   
     render() {
+
+      //conditional based off state value to render nothing, ingredient selector divs or ingredient results
+
+
       return (
         <div id={"ingredients"}>
         <div id={"plan"}>
