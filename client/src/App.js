@@ -1,20 +1,21 @@
 import React, { Component } from 'react';
 import fetch from 'node-fetch';
 import Login from "./Components/Login";
-import Ingredients from "./Components/Ingredients";
-import Goal from "./Components/Goal_Meter";
-import BLD from "./Components/BLD";
-import Recipe from "./Components/Recipe_list";
-import Header from "./Components/header"
+import Ingredient_Selection from "./Components/Ingredient_Selection";
+import Ingredient_results from "./Components/Ingredient_results";
+import Ingredient_DayPlan from "./Components/Ingredient_DayPlan";
 
 
 
+// import './App.css';
 
 
 export default class App extends Component {
   constructor(props) {
     super(props);
     this.state = {
+      //can be either selection/results/dayplan for render
+      ingredient: null,
       
     };
     this.api = `http://localhost:8000/api/example`;
@@ -28,15 +29,17 @@ export default class App extends Component {
   }
 
   render() {
+    //conditional to determine which ingredient page is going to render based off of the state for ingredient
+    // <Ingredient_Selection/>
+    // <Ingredient_results/>
+    // <Ingredient_DayPlan/>
+
+
     return (
       <div id={"main"}>
         <h1>Welcome to Blue Ocean!</h1>
         <Login/>
-        <Ingredients/>
-        <Goal/>
-        <BLD/>
-        <Recipe/>
-        <Header/>
+
       </div>
     );
   }
