@@ -18,15 +18,15 @@ export default class App extends Component {
       ingredient: null,
       
     };
-    this.api = `http://localhost:8000/api/example`;
+    // this.api = `http://localhost:8000/api/example`;
   }
-  componentDidMount() {
-    fetch(this.api)
-      .then(res => res.json())
-      .then(seaCreatures => {
+  // componentDidMount() {
+  //   fetch(this.api)
+  //     .then(res => res.json())
+  //     .then(seaCreatures => {
        
-      });
-  }
+  //     });
+  // }
 
   render() {
     //conditional to determine which ingredient page is going to render based off of the state for ingredient
