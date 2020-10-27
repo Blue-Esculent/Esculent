@@ -20,6 +20,7 @@ export default class App extends Component {
     };
     // this.api = `http://localhost:8000/api/example`;
   }
+
   componentDidMount() {
     // fetch(this.api)
     //   .then(res => res.json())
@@ -27,6 +28,7 @@ export default class App extends Component {
        
     //   });
   }
+
 
   render() {
    
