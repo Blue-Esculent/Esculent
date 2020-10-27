@@ -5,7 +5,11 @@ import Ingredients from "./Components/Ingredients";
 import Goal from "./Components/Goal_Meter";
 import BLD from "./Components/BLD";
 import Recipe from "./Components/Recipe_list";
-// import './App.css';
+import Header from "./Components/header"
+
+
+
+
 
 export default class App extends Component {
   constructor(props) {
@@ -32,7 +36,7 @@ export default class App extends Component {
         <Goal/>
         <BLD/>
         <Recipe/>
-        
+        <Header/>
       </div>
     );
   }
