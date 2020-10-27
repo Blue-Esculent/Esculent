@@ -13,15 +13,15 @@ export default class App extends Component {
     this.state = {
       
     };
-    this.api = `http://localhost:8000/api/example`;
+    // this.api = `http://localhost:8000/api/example`;
   }
-  componentDidMount() {
-    fetch(this.api)
-      .then(res => res.json())
-      .then(seaCreatures => {
+  // componentDidMount() {
+  //   fetch(this.api)
+  //     .then(res => res.json())
+  //     .then(seaCreatures => {
        
-      });
-  }
+  //     });
+  // }
 
   render() {
     return (
